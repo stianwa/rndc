@@ -1,4 +1,5 @@
 # rndc
+[![Go Reference](https://pkg.go.dev/badge/github.com/stianwa/rndc.svg)](https://pkg.go.dev/github.com/stianwa/rndc) [![Go Report Card](https://goreportcard.com/badge/github.com/stianwa/rndc)](https://goreportcard.com/report/github.com/stianwa/rndc)
 
 Package rndc implements methods and functions for communicating with the
 BIND name server via RNDC (Remote Name Daemon Control).

@@ -1,7 +1,7 @@
 package rndc
 
 var testData = map[string][]byte{
-	"initRequest": []byte{
+	"initRequest": {
 		0x00, 0x00, 0x00, 0xd2, 0x00, 0x00, 0x00, 0x01,
 		0x05, 0x5f, 0x61, 0x75, 0x74, 0x68, 0x02, 0x00,
 		0x00, 0x00, 0x63, 0x04, 0x68, 0x73, 0x68, 0x61,
@@ -31,7 +31,7 @@ var testData = map[string][]byte{
 		0x00, 0x04, 0x6e, 0x75, 0x6c, 0x6c,
 	},
 	"initRequestExpect": []byte(`{"_auth":{"hsha":"\ufffdsMeUjC1V7lvxWUZuylSqewJmkdnfzgqEmyHhOWSGtvw=\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"},"_ctrl":{"_exp":"1710149081","_ser":"3916406274","_tim":"1710149021"},"_data":{"type":"null"}}`),
-	"initResponse": []byte{
+	"initResponse": {
 		0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x01,
 		0x05, 0x5f, 0x61, 0x75, 0x74, 0x68, 0x02, 0x00,
 		0x00, 0x00, 0x63, 0x04, 0x68, 0x73, 0x68, 0x61,
@@ -67,7 +67,7 @@ var testData = map[string][]byte{
 		0x00, 0x00, 0x01, 0x30,
 	},
 	"initResponseExpect": []byte(`{"_auth":{"hsha":"\ufffd5SVmzO1AnZk3Wcla3H4MAWV4xdDr/C/AtthtyhhCfTs=\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"},"_ctrl":{"_exp":"1710149081","_nonce":"1561998669","_rpl":"1","_ser":"3916406274","_tim":"1710149021"},"_data":{"result":"0","type":"null"}}`),
-	"commandStatusRequest": []byte{
+	"commandStatusRequest": {
 		0x00, 0x00, 0x00, 0xea,
 		0x00, 0x00, 0x00, 0x01, 0x05, 0x5f, 0x61, 0x75,
 		0x74, 0x68, 0x02, 0x00, 0x00, 0x00, 0x63, 0x04,
@@ -101,7 +101,7 @@ var testData = map[string][]byte{
 		0x75, 0x73,
 	},
 	"commandStatusRequestExpect": []byte(`{"_auth":{"hsha":"\ufffdz5lRV8i3k9mGOc0bPFW33qVXrlJoj5ngqlRFAyifMkk=\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"},"_ctrl":{"_exp":"1710149081","_nonce":"1561998669","_ser":"3916406275","_tim":"1710149021"},"_data":{"type":"status"}}`),
-	"commandStatusResponse": []byte{
+	"commandStatusResponse": {
 		0x00, 0x00, 0x03, 0x72, 0x00, 0x00, 0x00, 0x01,
 		0x05, 0x5f, 0x61, 0x75, 0x74, 0x68, 0x02, 0x00,
 		0x00, 0x00, 0x63, 0x04, 0x68, 0x73, 0x68, 0x61,
