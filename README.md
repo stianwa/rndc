@@ -66,4 +66,4 @@ The rndc module is currently under development. Do not use for production.
 License
 -------
 
-GPLv3, see [LICENSE.md](LICENSE.md)
+MIT, see [LICENSE.md](LICENSE.md)
